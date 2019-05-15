@@ -1,0 +1,2 @@
+# categoryScrollView
+自适应分类的数目以及title长度的一个展示，并与页面进行联动的效果
