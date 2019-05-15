@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<scroll-view scroll-x="true" class="weui-navbar" scroll-into-view="{{toView}}" >
+    <block wx:for-items="{{categoryData}}" wx:key='key'>
+        <view id="{{'view'+index}}" class="{{activeIndex == index ?'item_on':''}} default-item" bindtap="tabClick"  data-item='{{item}}' style='margin-left:{{index == 0 ?20:0}}px;margin-right:20px;'>
+            {{item.categoryName}}
+        </view>
+    </block>
+    <view class="weui-navbar-slider" style="transform:translateX({{slideOffsetLeft}}px);width:{{slideW}}px"></view>
+</scroll-view>
+
+<swiper current="{{activeIndex}}" class="swiper-box" duration="100" bindchange="bindChange">
+  <block wx:for="{{categoryData}}" wx:key='key'>
+
+    <swiper-item class="swiper-item" style='background:{{colorArray[index]}}'>
+      <text class='active-view'>{{item.categoryName}}</text>
+    </swiper-item>
+    
+  </block>
+</swiper>

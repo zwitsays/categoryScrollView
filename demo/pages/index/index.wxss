@@ -1,0 +1,52 @@
+/**index.wxss**/
+page {
+  height: 100%;
+}
+/**导航分类部分样式**/
+.weui-navbar{
+   top: 0px;
+   width: 100%;
+   height: 40px;
+   position: fixed;
+   box-sizing: border-box;
+   white-space: nowrap; 
+   z-index: 100;
+   background: white;
+}
+.weui-navbar .default-item{
+  display: inline-block;
+  text-align: center;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  padding-bottom: 20rpx;
+}
+.weui-navbar .item_on{
+   color:#53DB21;
+}
+.weui-navbar-slider{
+    position: absolute;
+    top: 48rpx;
+    background: #53DB21;
+    bottom: 0px;
+    transition: transform .3s;
+    height:3px;
+    border-radius:3px;
+}
+.swiper-box {
+   display: flex;
+   flex-direction: column; 
+   height: 92%;
+   margin-top: 40px;
+}
+
+.swiper-box{
+  display: flex;
+  height: 100%;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.swiper-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
